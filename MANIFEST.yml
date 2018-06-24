@@ -1,0 +1,15 @@
+---
+applications:
+  - name: sheshank-event-hub
+    memory: 512M
+    instances: 1
+    timeout: 180
+    path: target/predix-eventhub-1.0-SNAPSHOT.jar
+    buildpack: java-buildpack
+    env:
+     EVENTHUB_URI: uri
+     EVENTHUB_PORT: 443
+     ZONE_ID: zoneid
+     AUTH_URL: auth url
+     CLIENT_ID: clientid
+     CLIENT_SECRET: clientsecret
